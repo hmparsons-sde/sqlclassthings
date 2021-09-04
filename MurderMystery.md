@@ -3,7 +3,7 @@
 
 Start by retrieving the corresponding crime scene report from the police department’s database.
 
-``SELECT * FROM crime_scene_report LIMIT 10 
+SELECT * FROM crime_scene_report LIMIT 10 
  SELECT * FROM crime_scene_report WHERE type = ‘murder’ AND city = ‘SQL City’ AND date = ‘20180115’
  WITH witnesses as (SELECT * FROM interview JOIN person p ON p.id = person_id
  WHERE (name LIKE’%Annabel%’ AND address_street_name = ‘Franklin Ave’) OR  (address_street_name = “Northwestern Dr”))``
@@ -18,13 +18,13 @@ SELECT * FROM get_fit_now_member m JOIN get_fit_now_check_in ON m.id = membershi
  WITH p AS (SELECT name, license_id FROM person WHERE id in (‘28819’, ‘67318’)) 
  SELECT  * FROM drivers_license d JOIN p on p.license_id = d.id WHERE id IN (select license_id FROM p)
 
-**BONUS**
+BONUS
 
-```select * from interview where person_id = ‘insert murderer’s id here’```
+SELECT * FROM interview WHERE person_id = ‘insert murderer’s id here’
 
 Murderer's Testimony: I was hired by a woman with a lot of money. I don’t know her name but I know she’s around 5’5″ (65″) or 5’7″ (67″). She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017. 
 
-```SELECT id FROM drivers_license WHERE car_model = “Model S” AND gender = ‘female’
+SELECT id FROM drivers_license WHERE car_model = “Model S” AND gender = ‘female’
  SELECT * FROM person WHERE license_id IN (‘202298’, ‘291182’, ‘918773’)
  SELECT p.name, f.* FROM facebook_event_checkin f JOIN person p ON p.id = f.person_id
  WHERE f.person_id IN (‘78881’, ‘90700’, ‘99716’)
