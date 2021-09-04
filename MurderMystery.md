@@ -1,5 +1,5 @@
 *SQL MURDER MYSTERY*
-A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a ​murder​ that occurred sometime on ​Jan.15, 2018​ and that it took place in ​SQL City​.
+```A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a ​murder​ that occurred sometime on ​Jan.15, 2018​ and that it took place in ​SQL City​.
 
 Start by retrieving the corresponding crime scene report from the police department’s database.
 
@@ -13,10 +13,10 @@ Witness 1: I saw the murder happen, and I recognized the killer from my gym when
 Witness 2: I heard a gunshot and then saw a man run out. He had a “Get Fit Now Gym” bag.
 The membership number on the bag started with “48Z”. Only gold members have those bags. The man got into a car with a plate that included “H42W”.
 
-``SELECT * FROM get_fit_now_member m JOIN get_fit_now_check_in ON m.id = membership_id
+SELECT * FROM get_fit_now_member m JOIN get_fit_now_check_in ON m.id = membership_id
  WHERE check_in_date = ‘20180109’ AND membership_status = ‘gold’ AND membership_id LIKE ’48Z%’
  WITH p AS (SELECT name, license_id FROM person WHERE id in (‘28819’, ‘67318’)) 
- SELECT  * FROM drivers_license d JOIN p on p.license_id = d.id WHERE id IN (select license_id FROM p)``
+ SELECT  * FROM drivers_license d JOIN p on p.license_id = d.id WHERE id IN (select license_id FROM p)
 
 **BONUS**
 
