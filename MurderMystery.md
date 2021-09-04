@@ -24,10 +24,10 @@ The membership number on the bag started with “48Z”. Only gold members have 
 
 Murderer's Testimony: I was hired by a woman with a lot of money. I don’t know her name but I know she’s around 5’5″ (65″) or 5’7″ (67″). She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017. 
 
-``SELECT id FROM drivers_license WHERE car_model = “Model S” AND gender = ‘female’
+```SELECT id FROM drivers_license WHERE car_model = “Model S” AND gender = ‘female’
  SELECT * FROM person WHERE license_id IN (‘202298’, ‘291182’, ‘918773’)
  SELECT p.name, f.* FROM facebook_event_checkin f JOIN person p ON p.id = f.person_id
- WHERE f.person_id IN (‘78881’, ‘90700’, ‘99716’)
+ WHERE f.person_id IN (‘78881’, ‘90700’, ‘99716’)```
 
  ```INSERT INTO solution VALUES (1, 'Miranda Priestly');
         SELECT value FROM solution;```
