@@ -29,6 +29,5 @@ Murderer's Testimony: I was hired by a woman with a lot of money. I don’t know
  SELECT p.name, f.* FROM facebook_event_checkin f JOIN person p ON p.id = f.person_id
  WHERE f.person_id IN (‘78881’, ‘90700’, ‘99716’)
 
- INSERT INTO solution VALUES (1, 'Miranda Priestly');
-        
-        SELECT value FROM solution;``
+ ```INSERT INTO solution VALUES (1, 'Miranda Priestly');
+        SELECT value FROM solution;```
